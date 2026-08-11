@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" width="1280" height="620" role="img" aria-labelledby="title desc">
+<title id="title">个人代理服务器搭建流程路线图</title>
+<desc id="desc">从购买域名到客户端测试的八个步骤。</desc>
+<style>text{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif;fill:#111827}.title{font-size:30px;font-weight:700}.sub{font-size:15px;fill:#6b7280}.num{font-size:20px;font-weight:700;fill:#fff}.step{font-size:18px;font-weight:700}.body{font-size:13px;fill:#6b7280}.note{font-size:14px;fill:#4b5563}.arrow{stroke:#2563eb;stroke-width:2.5;fill:none}</style>
+<defs><marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto"><polygon points="0 0,12 4,0 8" fill="#2563eb"/></marker><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#111827" flood-opacity="0.08"/></filter></defs>
+<rect width="1280" height="620" fill="#ffffff"/>
+<text x="640" y="60" text-anchor="middle" class="title">搭建路线图：按这个顺序走</text>
+<text x="640" y="90" text-anchor="middle" class="sub">第一次搭建不要跳步。先把每一步跑通，再考虑多节点和优化。</text>
+<g filter="url(#shadow)"><rect x="70" y="150" width="240" height="120" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.6"/>
+<circle cx="110" cy="190" r="20" fill="#2563eb"/><text x="110" y="197" text-anchor="middle" class="num">1</text>
+<text x="148" y="192" class="step">域名</text><text x="148" y="222" class="body">购买并进入解析</text></g>
+<g filter="url(#shadow)"><rect x="370" y="150" width="240" height="120" rx="16" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.6"/>
+<circle cx="410" cy="190" r="20" fill="#2563eb"/><text x="410" y="197" text-anchor="middle" class="num">2</text>
+<text x="448" y="192" class="step">VPS</text><text x="448" y="222" class="body">购买服务器并记录IP</text></g>
+<g filter="url(#shadow)"><rect x="670" y="150" width="240" height="120" rx="16" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.6"/>
+<circle cx="710" cy="190" r="20" fill="#2563eb"/><text x="710" y="197" text-anchor="middle" class="num">3</text>
+<text x="748" y="192" class="step">解析</text><text x="748" y="222" class="body">A记录指向VPS</text></g>
+<g filter="url(#shadow)"><rect x="970" y="150" width="240" height="120" rx="16" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.6"/>
+<circle cx="1010" cy="190" r="20" fill="#2563eb"/><text x="1010" y="197" text-anchor="middle" class="num">4</text>
+<text x="1048" y="192" class="step">连接</text><text x="1048" y="222" class="body">SSH进入服务器</text></g>
+<g filter="url(#shadow)"><rect x="70" y="370" width="240" height="120" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.6"/>
+<circle cx="110" cy="410" r="20" fill="#2563eb"/><text x="110" y="417" text-anchor="middle" class="num">5</text>
+<text x="148" y="412" class="step">端口</text><text x="148" y="442" class="body">开放面板和节点端口</text></g>
+<g filter="url(#shadow)"><rect x="370" y="370" width="240" height="120" rx="16" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.6"/>
+<circle cx="410" cy="410" r="20" fill="#2563eb"/><text x="410" y="417" text-anchor="middle" class="num">6</text>
+<text x="448" y="412" class="step">3x-ui</text><text x="448" y="442" class="body">安装并保存登录信息</text></g>
+<g filter="url(#shadow)"><rect x="670" y="370" width="240" height="120" rx="16" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.6"/>
+<circle cx="710" cy="410" r="20" fill="#2563eb"/><text x="710" y="417" text-anchor="middle" class="num">7</text>
+<text x="748" y="412" class="step">节点</text><text x="748" y="442" class="body">创建代理节点</text></g>
+<g filter="url(#shadow)"><rect x="970" y="370" width="240" height="120" rx="16" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.6"/>
+<circle cx="1010" cy="410" r="20" fill="#2563eb"/><text x="1010" y="417" text-anchor="middle" class="num">8</text>
+<text x="1048" y="412" class="step">客户端</text><text x="1048" y="442" class="body">导入并测试</text></g>
+<path d="M310 210 H360" class="arrow" marker-end="url(#arrow)"/>
+<path d="M610 210 H660" class="arrow" marker-end="url(#arrow)"/>
+<path d="M910 210 H960" class="arrow" marker-end="url(#arrow)"/>
+<path d="M1090 270 V320 H190 V360" class="arrow" marker-end="url(#arrow)"/>
+<path d="M310 430 H360" class="arrow" marker-end="url(#arrow)"/>
+<path d="M610 430 H660" class="arrow" marker-end="url(#arrow)"/>
+<path d="M910 430 H960" class="arrow" marker-end="url(#arrow)"/>
+<g transform="translate(230 540)"><rect x="0" y="0" width="820" height="46" rx="10" fill="#f8fafc" stroke="#e2e8f0"/><text x="28" y="30" class="note">完成到第 6 步，代表服务端已经搭好；完成第 8 步，才代表客户端真实可用。</text></g>
+</svg>
